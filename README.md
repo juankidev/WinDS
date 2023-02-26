@@ -1,6 +1,8 @@
 # WinDS - PRUEBA TECNICA SOFTWARE DEVELOPER ENGINEER
 
-Hola! Este es el repositorio donde se encuentra adjunto el código de mi prueba técnica para el puesto de Software Developer Engineer en CONSWARE. Decidí nombrar a la aplicación con el nombre "WindDS", abreviatura en inglés de "Gana en DrawSomething", a continuación se encuentran descritos los supuestos necesarios y las instrucciones de instalación.
+Hola! Este es el repositorio donde se encuentra adjunto el código de mi prueba técnica para el puesto de Software Developer Engineer en CONSWARE. Decidí nombrar a la aplicación con el nombre "WindDS", abreviatura en inglés de "Gana en DrawSomething", para construir está aplicación se utilizó C# .NET Core, JQuery, BlockUI y Bootstrap.
+
+A continuación se encuentran descritos los supuestos necesarios y las instrucciones de instalación.
 
 
 ## Supuestos necesarios:
