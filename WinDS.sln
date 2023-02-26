@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinDS", "WinDS\WinDS.csproj", "{AB7239E8-B460-4F38-820C-5BBCFAB83BE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 Web", "1.1 Web", "{716A42F3-194F-4949-90E9-988507DF86F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 Services", "1.2 Services", "{50C43F1C-E2C0-4FB8-B94D-E5E9C3636FD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB7239E8-B460-4F38-820C-5BBCFAB83BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7239E8-B460-4F38-820C-5BBCFAB83BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7239E8-B460-4F38-820C-5BBCFAB83BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7239E8-B460-4F38-820C-5BBCFAB83BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB7239E8-B460-4F38-820C-5BBCFAB83BE9} = {716A42F3-194F-4949-90E9-988507DF86F3}
+		{2C12882B-DBEA-4EC0-9D93-DE0D181CAB97} = {50C43F1C-E2C0-4FB8-B94D-E5E9C3636FD6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {333DF3C0-40FD-4CF4-831D-F1E7F3CAA9EF}
+	EndGlobalSection
+EndGlobal

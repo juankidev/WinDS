@@ -1,0 +1,86 @@
+﻿@page
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="mb-3">
+                <label for="letters" class="form-label">Cadena de texto:</label>
+                <input type="text" class="form-control" id="letters" aria-describedby="Letters" 
+                placeholder="Ingresa la cadena de texto con las letras que debes combinar" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="letters" class="form-label">Número de caracteres:</label>
+                <input type="number" class="form-control" id="lenght" aria-describedby="String Length" min="2"
+                placeholder="Ingresa el número de caracteres de la palabra" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Ver combinaciones</button>
+        </form>
+    </div>
+
+    <div class="container mt-5" id="partial">
+        
+        
+    </div>
+
+    <script type="text/javascript">
+        $("#form").submit(function (e) {
+            e.preventDefault();
+
+            const inputLetters = $("#letters").val();
+            const inputLength = $("#lenght").val();
+
+            $.ajax({
+                url: '@Url.Action("CombinationsPartial", "Game")',
+                type: "POST",
+                async: true,
+                data: { inputLetters, inputLength },
+                dataType: "HTML",
+                beforeSend: function () {
+                    $.blockUI({
+                        css: {
+                            border: 'none',
+                            padding: '15px',
+                            backgroundColor: '#000',
+                            '-webkit-border-radius': '10px',
+                            '-moz-border-radius': '10px',
+                            opacity: .5,
+                            color: '#fff'
+                        },
+                        message: '<div class="spinner">' +
+                            '< div > </div' +
+                            '< div > </div' +
+                            '< div > </div' +
+                            '< div > </div' +
+                            '< div > </div' +
+                            '< div > </div' +
+                            '< /div>'
+                    })
+                },
+                success: function (data) {
+                    $("#partial").html(data);
+                    $("#partial-table").DataTable();
+                },
+                complete: function () {
+                    $.unblockUI();
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Consware WinDS</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Privacy", "Home")">Privacy</a></li>
+                        <li><a href="https://github.com/juankidev/WinDS" target="_blank">GitHub Repo</a></li>
+                        <li><a href="https://www.linkedin.com/in/juan-naranjo31/" target="_blank">Developer LinkedIn Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="showcase">
+        <div class="container showcase-inner">
+            <div class="img-container">
+                <img src="img/consware-logo.png"/>
+            </div>
+            <h1>¡Bienvenido a WinDS!</h1>
+            <p>
+                La web donde podrás vencer a todos en DrawSomething. 
+            </p>
+            <a href="@Url.Action("Index", "Game")" class="btn">Empezar a ganar</a>
+        </div>
+    </header>
+</body>
+</html>

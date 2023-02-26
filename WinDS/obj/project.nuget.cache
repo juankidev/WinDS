@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ab+VdWLliJeoYzdOBw4Eacbl6dgwqXEtozOyML084I454ashQzN1yguDem1DxM+lNZm1YBqQ6hWCJxivjqZ/yQ==",
+  "success": true,
+  "projectFilePath": "D:\\Escritorio\\DEV\\Web\\WinDS\\WinDS\\WinDS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JUANKI\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
